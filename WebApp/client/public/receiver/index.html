@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>光格数字孪生平台</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/screen.css" />
+</head>
+
+<body>
+  <div class="screen-container">
+    <div class="screen-header"></div>
+    <div id="screen-btn-list" class="screen-left btn-none">
+      <div class="screen-btn" value="1">
+        <span>Call Unity</span>
+      </div>
+      <div class="screen-btn" value="2">
+        <span>开特效</span>
+      </div>
+      <div class="screen-btn" value="3">
+        <span>关特效</span>
+      </div>
+      <div class="screen-btn" value="4">
+        <span>相机自由旋转</span>
+      </div>
+      <div class="screen-btn" value="5">
+        <span>返回</span>
+      </div>
+    </div>
+    <div id="screen-btn-list" class="screen-right">
+      <div class="screen-btn" value="0">
+        <span>虚拟地球</span>
+      </div>
+      <div class="screen-btn" value="1">
+        <span>虚拟地球前进</span>
+      </div>
+      <div class="screen-btn" value="2">
+        <span>虚拟地球后退</span>
+      </div>
+      <div class="screen-btn" value="3">
+        <span>cesium飞向城市</span>
+      </div>
+      <div class="screen-btn" value="4">
+        <span>cesium重置相机</span>
+      </div>
+      <div class="screen-btn" value="5">
+        <span>cesium地球</span>
+      </div>
+    </div>
+    <div class="screen-footer"></div>
+    <div id="player"></div>
+  </div>
+  <script type="text/javascript" src="./njs/adapter-latest.js"></script>
+  <script src="./njs/min.js"></script>
+  <script src="./njs/ResizeObserver.global.js"></script>
+  <script src="./njs/polyfill.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/screen.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+:root {
+  --margin: 150px;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+/*  background: url(../images/bg.jpg) center no-repeat #030a1a;*/
+}
+
+.screen-container {
+  position: relative;
+  height: 100%;
+}
+
+.screen-header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 85px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  background: url(../images/header.png) center no-repeat;
+  visibility: hidden
+}
+
+.screen-footer {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 43px;
+  color: #ffffff;
+  background: url(../images/footer.png) center no-repeat;
+  visibility: hidden
+}
+
+#screen-btn-list {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 171px;
+  height: 290px;
+  background: url(../images/btn-bg.png) left top no-repeat;
+}
+
+.btn-none {
+  display: none;
+}
+
+.screen-left {
+  left: var(--margin);
+}
+
+.screen-right {
+  right: var(--margin);
+}
+
+.screen-btn {
+  width: 169px;
+  height: 34px;
+  line-height: 34px;
+  margin: 0 auto 30px;
+  text-align: center;
+  background: url(../images/btn.png) left top no-repeat;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.screen-btn:hover,
+.screen-btn.screen-btn-active {
+  background: url(../images/btn-hover.png) left top no-repeat;
+}
+
+.screen-btn span {
+  color: #c9e8fc;
+  text-transform: uppercase;
+  font-family: 'Poppins', 'Helvetica', sans-serif;
+}
+
+.screen-btn.screen-btn-active span {
+  color: #ffffff;
+  font-weight: bold;
+}

@@ -1,0 +1,74 @@
+{
+    "name": "WebInput",
+    "maps": [
+        {
+            "name": "MouseInput",
+            "id": "cc55babd-eed3-4663-813a-734641aef118",
+            "actions": [
+                {
+                    "name": "LeftButtonClick",
+                    "type": "Button",
+                    "id": "e6d0a600-4b3a-4f0d-94ae-b7a6a2ead8e1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MoveDelta",
+                    "type": "Value",
+                    "id": "48779556-118a-45c3-a91b-b83446ae4582",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MovePosition",
+                    "type": "Value",
+                    "id": "1518535f-cc34-4770-a0db-cb19d3ee3130",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "00fd7d93-b095-4fb8-9227-a5d377defe0c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftButtonClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f90d5dd0-6139-405c-a067-8ba82ff3170c",
+                    "path": "<Mouse>/delta",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b8601edd-17b2-4657-a9e5-97ce5069a9f3",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

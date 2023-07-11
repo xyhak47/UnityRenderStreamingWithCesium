@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ECharts</title>
+		<!-- 引入 echarts.js -->
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+
+			.title {
+				margin: 0;
+				text-align: center;
+				color: aqua;
+				background-color: #162256;
+				padding: 10px 0;
+				height: 60px;
+			}
+
+			.main {
+				display: flex;
+				/* height: 600px; */
+				height: calc(100vh - 60px);
+			}
+
+			.main>div {
+				/* background-color: ; */
+				/* opacity: .3; */
+			}
+
+			.left,
+			.right {
+				width: 1%;
+				background-color: #162256;
+			}
+
+			.middle {
+				width: 60%;
+				margin: 0 auto;
+				/* background-color: antiquewhite; */
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+		<div id="index">
+			<h1 class="title">数字孪生世界 Html UI</h1>
+			<div class="main">
+				<div class="left">
+					<button type="button" style="width: 200px;height:100px;" onclick="call_unity()">Call Unity </button>
+					<button type="button" style="width: 200px;height:100px;" onclick="open_effect()">开特效 </button>
+					<button type="button" style="width: 200px;height:100px;" onclick="close_effect()">关特效 </button>
+					<button type="button" style="width: 200px;height:100px;" onclick="camera_rotate()">相机自由旋转 </button>
+					<button type="button" style="width: 200px;height:100px;" onclick="back()">返回 </button>
+
+				</div>
+				<div class="middle">
+					<div id="main" style="width: 800px;height:800px;"></div>
+				</div>
+				<div class="right"></div>
+			</div>
+		</div>
+		<script src="echarts.min.js"></script>
+		<script type="text/javascript">
+			function call_unity() 
+			{
+				call_unity_with_data("这个是一个精美的建筑，这是一个3D场景里的UI,可以始终朝向相机")
+			}
+
+			function open_effect() 
+			{
+				
+			}
+
+			function close_effect() 
+			{
+				
+			}
+
+			function camera_rotate()
+			{
+				
+			}
+
+			function call_unity_with_data()
+			{}
+
+			function back()
+			{}
+
+			function checkUi(item) {
+				console.log("js接受到参数",item);
+			}
+		</script>
+	</body>
+</html>
+
